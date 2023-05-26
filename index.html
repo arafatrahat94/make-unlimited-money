@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Dark Login Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    .bg-gradient {
+      background: linear-gradient(to left bottom, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))}
+
+    .color-bubble {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="w-full md:max-w-md p-8 bg-opacity-75 bg-gradient-to-bl from-gray-700 via-gray-900 to-black rounded-lg transform scale-90 md:scale-100">
+      <h2 class="text-2xl text-white font-bold mb-8">Login To Your Account</h2>
+      <form>
+        <input type="email" placeholder="Username" id="usernameField" class="w-full py-2 px-4 rounded-lg bg-gray-700 text-white mb-4"
+          required />
+        <div class="relative">
+          <input type="password" id="passwordFeild" placeholder="Password"
+            class="w-full py-2 px-4 rounded-lg bg-gray-700 text-white mb-4 pr-10" required />
+          <button type="button" class="absolute right-0  top-0 mt-2 mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+              <path
+                d="M22 12s-4-8-10-8S2 12 2 12s4 8 10 8 10-8 10-8zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.11 0-2 .89-2 2s.89 2 2 2 2-.89 2-2-.89-2-2-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" class="mr-2">
+          <label class="text-sm text-gray-400">Remember me</label>
+        </div>
+        <div class="flex items-center justify-between mb-4">
+          <a href="#" class="text-sm text-gray-400">Forgot password?</a>
+          <div>
+            <span class="color-bubble bg-pink-500"></span>
+            <span class="color-bubble bg-yellow-500"></span>
+          </div>
+        </div>
+        <button type="submit" id="loginButton"
+          class="w-full py-2 px-4 bg-gray-800 text-white rounded-lg btn">Log in</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- script -->
+  <script src="js/login.js"></script>
+</body>
+
+</html>
