@@ -7,7 +7,7 @@ document.getElementById('loginButton').addEventListener('click', function(){
     const passwordValue = password.value;
     // step4: compare with the provided email adress and password to log in;
     if(emailValue === 'logeachi@mail.com' && passwordValue === '4206'){
-        
+        window.location.href = 'bank.html'
     }
     else{
         alert('please check you id or password if its correct')

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+    <header class="text-white">
+        <h1 class="text-5xl mt-6 text-center">Let's Get Some <span class="font-semibold text-violet-600">Money</span></h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4  text-white w-7/12 mx-auto mt-12">
+                <div class="bg-opacity-100 bg-gradient-to-bl from-gray-700 via-gray-900 to-black rounded-xl p-8">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-5xl" >$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-gray-500 via-green-700 to-black rounded-xl p-8">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h2 class="text-5xl" >$<span id="withdrawCurrent">00</span></h2>
+                </div>
+                <div class="bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-green-200 via-sky-400 to-yellow-800 rounded-xl p-8">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h2 class="text-5xl" >$<span id="balanceCurrent">2000</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mt-12 text-white">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 w-9/12 mx-auto gap-8 mt-12">
+                <div class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500	 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold">Please Deposit</h3>
+                    <input type="text" id="input-deposit"  aria-describedby="helper-text-explanation" class="bg-gray-50 my-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-3/4 p-2.5 py-4   dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter ammount to deposit">
+                    <button type="button" id="btn-deposit" class="text-black bg-emerald-50 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-white-600 dark:hover:bg-emerald-600 dark:hover:text-emerald-50 focus:outline-none dark:focus:ring-emerald-80">Deposit</button>
+                </div>
+                <div class="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 rounded-xl p-8">
+                    <h3 class="text-2xl">ENter Ammount To Withdraw</h3>
+                    <input type="text" id="input-withdraw" aria-describedby="helper-text-explanation" class="bg-gray-50 my-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-3/4 p-2.5 py-4   dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="enter ammount to withdraw">
+                    <button type="button" id="withdraw-btn" class="text-black bg-emerald-50 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-white-600 dark:hover:bg-gray-600 dark:hover:text-emerald-50 focus:outline-none dark:focus:ring-gray-800">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
